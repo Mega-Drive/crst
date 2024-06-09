@@ -1505,11 +1505,13 @@ section
 {
 	margin-bottom: 16px;
 }
-.feature_check_item img
+.feature_check_item svg
 {
-	width: 20px;
-	height: 16px;
-	margin-top: 6px;
+	width: 21px;
+	height: 21px;
+	fill: var(--primary_color_light);
+	margin-top: 4px;
+	flex-shrink: 0;
 }
 .feature_check_item p
 {

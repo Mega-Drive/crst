@@ -253,6 +253,10 @@
     {
         height: 290px;
     }
+    .teacher_social
+    {
+        margin-top: 16px;
+    }
     .footer_bottom_content
     {
         height: auto;
@@ -473,6 +477,8 @@
     }
     .teacher_pic_sm
     {
+        width: 120px;
+        height: 120px;
         margin-right: 16px;
     }
     .teacher_content
