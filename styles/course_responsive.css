@@ -405,6 +405,14 @@
         padding-left: 24px;
         padding-right: 24px;
     }
+    .chevron_right
+    {
+        -webkit-transform: translateY(1px);
+        -moz-transform: translateY(1px);
+        -ms-transform: translateY(1px);
+        -o-transform: translateY(1px);
+        transform: translateY(1px);
+    }
     .section_content_row
     {
         margin-top: 43px;
