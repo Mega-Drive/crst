@@ -10,6 +10,7 @@
 4. Search Panel
 5. Cart Hover
 6. Init Menu
+7. Init Scrolling
 
 
 ******************************/
@@ -29,6 +30,7 @@ $(document).ready(function()
 	initCartHover();
 	setHeader();
 	initMenu();
+	initScrolling()
 
 	// Fix parallax on resize and set header on scroll
 	$(window).on('resize', function()
@@ -196,6 +198,34 @@ $(document).ready(function()
 				event.stopPropagation();
 			});
 		}
+	}
+
+	/* 
+
+	7. Init Scrolling
+
+	*/
+
+	function initScrolling()
+	{
+		if($('.details_item').length)
+		{
+			var links = $('.details_item');
+	    	links.each(function()
+	    	{
+	    		var ele = $(this);
+	    		var target = ele.data('scroll-to');
+	    		ele.on('click', function(e)
+	    		{
+	    			e.preventDefault();
+	    			$(window).scrollTo(target, 500, {offset: -88, easing: 'easeInOutQuart'});
+	    			if($('.menu').hasClass('active'))
+	    			{
+	    				$('.menu').removeClass('active');
+	    			};
+	    		});
+	    	});
+		}	
 	}
 
 });

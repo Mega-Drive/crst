@@ -11,8 +11,8 @@
 5. Cart Hover
 6. Init Menu
 7. Testimonials Slider
-7. Brands Marquee
-8. Blog Slider
+8. Brands Marquee
+9. Blog Slider
 
 
 ******************************/
@@ -249,7 +249,7 @@ $(document).ready(function()
 
 	/* 
 
-	7. Brands Marquee
+	8. Brands Marquee
 
 	*/
 
@@ -272,7 +272,7 @@ $(document).ready(function()
 
 	/* 
 
-	8. Blog Slider
+	9. Blog Slider
 
 	*/
 
