@@ -39,14 +39,7 @@
 
 @media only screen and (max-width: 1440px)
 {
-    .home_inner
-    {
-        height: 500px;
-    }
-	.mission_container h1
-    {
-        font-size: 40px;
-    }
+	
 }
 
 /************
@@ -88,10 +81,6 @@
     {
         display: flex !important;
     }
-    .split_section_left
-    {
-        padding-right: 24px;
-    }
 }
 
 /************
@@ -109,11 +98,7 @@
 
 @media only screen and (max-width: 1024px)
 {
-    .brand_item
-    {
-        transform: scale(0.8);
-        margin-right: 72px;
-    }
+	
 }
 
 /************
@@ -122,31 +107,19 @@
 
 @media only screen and (max-width: 991px)
 {
-    .home .container
+    .home_content
     {
-        max-width: 100%;
+        width: 100%;
     }
-    .home_inner
+	.home_container
     {
-        height: auto;
-        padding-top: 88px;
-        padding-bottom: 88px;
+        flex-direction: column !important;
+        padding-top: 49px;
+        padding-bottom: 48px;
     }
-    .mission_container h1
+    .home_background
     {
-        font-size: 32px;
-    }
-    .mission_button
-    {
-        margin-top: 32px;
-    }
-    .split_section_pic
-    {
-        margin-top: 40px;
-    }
-    .teacher_social .social_links_container
-    {
-        margin-left: 0;
+        display: none;
     }
     .footer .container
     {
@@ -188,16 +161,12 @@
 }
 
 /************
-8. < 805px
+8. < 880px
 ************/
 
-@media only screen and (max-width: 805px)
+@media only screen and (max-width: 880px)
 {
-	.video_container video
-    {
-        width: auto;
-        height: 100%;
-    }
+	
 }
 
 /************
@@ -231,6 +200,10 @@
     {
         padding-top: 0;
     }
+    .home
+    {
+        padding-top: 72px;
+    }
     .header_search_container
     {
         display: none !important;
@@ -238,27 +211,6 @@
     .menu_search
     {
         display: block;
-    }
-    .home
-    {
-        padding-top: 72px;
-    }
-    .mission_container h1
-    {
-        font-size: 28px;
-    }
-    .brands_description
-    {
-        padding-right: 24px;
-    }
-    .brands .container
-    {
-        max-width: 100%;
-    }
-    .brands_flex
-    {
-        padding-left: 12px;
-        padding-right: 12px;
     }
     .footer_bottom_content
     {
@@ -310,10 +262,6 @@
     .section_title
     {
         margin-top: 12px;
-    }
-    .home_button > div > span
-    {
-        margin-bottom: 0;
     }
     /* Header - mobile */
     .header
@@ -390,125 +338,76 @@
     }
     .home
     {
+        padding-top: 56px;
         padding-left: 0;
         padding-right: 0;
-        padding-top: 56px;
+    }
+    .home_outer
+    {
+        border-radius: 0;
     }
     .home_inner
     {
-        border-radius: 0;
-        padding-top: 64px;
-        padding-bottom: 64px;
+        padding-top: 54px;
+        padding-bottom: 57px;
     }
-    .home_content
+    .home_container
     {
-        padding-left: 0;
-        padding-right: 0;
+        border-radius: 0px !important;
     }
-    .mission_button
+    .home_content p
     {
-        margin-top: 24px;
+        font-size: 16px;
     }
     .section_content_row
     {
         margin-top: 43px;
     }
-    .about
-    {
-        padding-top: 64px;
-    }
-    .split_section_left p
-    {
-        font-size: 16px;
-    }
-    .stats
-    {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .stats_inner
-    {
-        border-radius: 0;
-        padding-bottom: 56px;
-    }
-    .stats_item
-    {
-        margin-bottom: 16px;
-    }
     .slider_nav_btn
     {
         display: none !important;
     }
-    .testimonials
-    {
-        padding-top: 64px;
-        padding-bottom: 64px;
-    }
-    .testimonial_rating svg
-    {
-        width: 18px;
-        height: 18px;
-    }
-    .testimonial_content
-    {
-        margin-top: 20px;
-    }
-    .testimonial_content p
-    {
-        font-size: 18px;
-    }
-    .testimonial_author_info > div:first-child
-    {
-        padding-left: 16px;
-        padding-right: 28px;
-    }
-    .testimonial_author_info > div:last-child
-    {
-        padding-left: 28px;
-    }
-    .testimonial_author_pic
-    {
-        width: 56px;
-        height: 56px;
-    }
-    .testomonial_author_name
-    {
-        font-size: 16px;
-    }
-    .testimonial_author_title
-    {
-        font-size: 14px;
-    }
-    .brands
-    {
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-    .teachers
-    {
-        padding-bottom: 56px;
-    }
-    .teacher
-    {
-        margin-bottom: 16px;
-    }
-    .section_title_container
+    .filters_list
     {
         margin-top: 64px;
     }
-    .cta1
+    .filter_item.checked
     {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 54px;
     }
-    .cta1_inner
+    .filter_item.checked::after
     {
-        height: auto;
-        border-radius: 0;
-        padding-left: 32px;
-        padding-right: 32px;
-        padding-top: 56px;
-        padding-bottom: 64px;
+        width: 16px;
+        height: 12px;
+    }
+    .filter_item
+    {
+        font-size: 14px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 18px;
+        padding-right: 18px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .page_item, .page_nav_item
+    {
+        width: 40px;
+        height: 40px;
+    }
+    .page_item a
+    {
+        font-size: 14px;
+        line-height: 40px;
+    }
+    .page_nav_item a
+    {
+        line-height: 35px;
+    }
+    .page_nav_item a svg
+    {
+        width: 36px;
+        height: 36px;
     }
     .footer
     {
@@ -531,11 +430,6 @@
     {
         width: 24px;
         height: 24px;
-    }
-    .teacher_social .social_links_container svg
-    {
-        width: 28px;
-        height: 28px;
     }
     .footer_container
     {
@@ -567,48 +461,17 @@
     {
         padding-right: 0;
     }
+    .blog_content
+    {
+        padding-left: 15px;
+    }
     .section_title_container
     {
         margin-top: 64px;
     }
-    .testimonial_author_info > div:last-child
-    {
-        display: none;
-    }
-    .testimonial_author_info > div:first-child::after
-    {
-        display: none;
-        padding-right: 0;
-    }
-    .brands_flex
-    {
-        height: 102px;
-    }
-    .brands_description
-    {
-        width: 112px;
-        height: 64px;
-    }
-    .cta1 .button_fill, .cta1 .button_outline
-    {
-        width: 100%;
-    }
-    .cta1_buttons
-    {
-        flex-direction: column !important;
-    }
-    .cta1_buttons > div:last-child
-    {
-        margin-left: 0;
-        margin-top: 12px;
-    }
     .button_fill a div, .button_outline a div
     {
         justify-content: center;
-    }
-    .blog_content h4 a
-    {
-        font-size: 20px;
     }
 }
 
@@ -680,53 +543,9 @@
     {
         font-size: 28px;
     }
-    .stats_title p
-    {
-        font-size: 16px;
-    }
-    .stats_num
-    {
-        font-size: 56px;
-    }
-    .stats_subtitle_2
-    {
-        margin-top: 11px;
-    }
-    .stats_subtitle_2 p
-    {
-        font-size: 16px;
-    }
-    .stats_description
-    {
-        font-size: 14px;
-        margin-top: 8px;
-    }
-    .teacher_name
-    {
-        font-size: 16px;
-    }
-    .teacher_title
-    {
-        font-size: 14px;
-    }
-    .teacher_info
-    {
-        padding-top: 14px;
-        padding-bottom: 15px;
-    }
-    .cta1_inner
-    {
-        padding-left: 24px;
-        padding-right: 24px;
-    }
-    .cta1_content p
-    {
-        font-size: 16px;
-    }
     .blog_content
     {
         padding-top: 13px;
-        padding-left: 15px;
         padding-bottom: 13px;
     }
     .blog_content h4 a

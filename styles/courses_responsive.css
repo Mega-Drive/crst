@@ -117,6 +117,10 @@
         padding-top: 49px;
         padding-bottom: 48px;
     }
+    .home_background
+    {
+        display: none;
+    }
     .footer .container
     {
         max-width: 100%;

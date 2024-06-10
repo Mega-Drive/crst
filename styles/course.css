@@ -1190,7 +1190,7 @@ section
 }
 .cart_hover_panel > div:last-child
 {
-	width: 330px;
+	width: 360px;
 	padding-top: 16px;
 	padding-left: 24px;
 	padding-right: 24px;
@@ -1212,12 +1212,12 @@ section
 }
 .hover_cart_item
 {
-	padding-bottom: 15px;
+	padding-bottom: 11px;
 	border-bottom: solid 1px var(--divider);
 }
 .hover_cart_item:not(:first-child)
 {
-	margin-top: 16px;
+	margin-top: 12px;
 }
 .hover_card_item_pic
 {
@@ -1239,7 +1239,7 @@ section
 }
 .hover_card_item_content a
 {
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 600;
 	color: var(--primary_text);
 }
@@ -1722,10 +1722,14 @@ section
 	padding-bottom: 20px;
 	padding-right: 24px;
 }
-.course_card_meta img
+.course_card_meta svg
 {
+	width: 13px;
+	height: 13px;
 	margin-right: 7px;
 	margin-bottom: 1px;
+	fill: var(--body_text);
+	opacity: 0.8;
 }
 .course_card_meta span
 {

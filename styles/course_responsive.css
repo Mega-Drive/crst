@@ -84,6 +84,10 @@
     {
         display: flex !important;
     }
+    .course_main_content
+    {
+        margin-top: 72px;
+    }
     .sidebar
     {
         padding-left: 0px;
@@ -435,7 +439,7 @@
     }
     .course_main_content
     {
-        margin-top: 16px;
+        margin-top: 64px;
     }
     .section_feature_check_list
     {

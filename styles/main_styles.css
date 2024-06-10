@@ -51,7 +51,7 @@
 	--body_text: #4a4e70;
 	--body_text_2: #585f97;
 	--divider: #e8ecf6;
-	--primary_color: #4450bc;
+	--primary_color: #5965d4;
 	--primary_color_light: #6c83e1;
 	--primary_grad_end: #4450bc;
 	--primary_light: #aeb9e9;
@@ -441,11 +441,17 @@ section
 }
 .button_arrow span
 {
-	margin-right: 8px;
+	margin-right: 2px;
 }
 .button_fill img
 {
 	margin-top: 1px;
+}
+.button_fill svg
+{
+	width: 28px;
+	height: 28px;
+	fill: var(--white);
 }
 .button_fill > .grad_mid_reverse
 {
@@ -1187,7 +1193,7 @@ section
 }
 .cart_hover_panel > div:last-child
 {
-	width: 311px;
+	width: 360px;
 	padding-top: 16px;
 	padding-left: 24px;
 	padding-right: 24px;
@@ -1205,16 +1211,16 @@ section
 }
 .hover_cart_list
 {
-	margin-top: 23px;
+	margin-top: 19px;
 }
 .hover_cart_item
 {
-	padding-bottom: 15px;
+	padding-bottom: 11px;
 	border-bottom: solid 1px var(--divider);
 }
 .hover_cart_item:not(:first-child)
 {
-	margin-top: 16px;
+	margin-top: 12px;
 }
 .hover_card_item_pic
 {
@@ -1236,7 +1242,7 @@ section
 }
 .hover_card_item_content a
 {
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 600;
 	color: var(--primary_text);
 }
@@ -1261,7 +1267,7 @@ section
 }
 .hover_cart_total
 {
-	margin-top: 26px;
+	margin-top: 22px;
 }
 .hover_cart_total p
 {
@@ -1666,10 +1672,14 @@ section
 	padding-bottom: 20px;
 	padding-right: 24px;
 }
-.course_card_meta img
+.course_card_meta svg
 {
+	width: 13px;
+	height: 13px;
 	margin-right: 7px;
 	margin-bottom: 1px;
+	fill: var(--body_text);
+	opacity: 0.8;
 }
 .course_card_meta span
 {
@@ -2287,7 +2297,7 @@ section
 }
 .blog_content h4 a
 {
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 600;
 	color: var(--primary_text);
 }
@@ -2297,20 +2307,21 @@ section
 }
 .blog_meta
 {
-	padding-top: 25px;
+	padding-top: 16px;
 }
 .blog_meta div span
 {
-	font-size: 12px;
-	font-weight: 400;
+	font-size: 14px;
+	font-weight: 300;
 	color: var(--secondary_text);
+	margin-left: 1px;
 }
 .blog_meta svg
 {
-	width: 20px;
-	height: 20px;
+	width: 16px;
+	height: 16px;
 	fill: var(--secondary_text);
-	margin-bottom: 2px;
+	margin-bottom: 4px;
 }
 
 /*********************************
