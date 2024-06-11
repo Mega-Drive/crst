@@ -202,6 +202,10 @@
     {
         margin-bottom: 16px;
     }
+    .breadcrumbs_section
+    {
+        margin-top: 72px;
+    }
     .footer_bottom_content
     {
         height: auto;
@@ -338,6 +342,7 @@
     {
         padding-left: 0;
         padding-right: 0;
+        margin-top: 56px;
     }
     .breadcrumbs_inner
     {

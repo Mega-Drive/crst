@@ -395,6 +395,11 @@
     {
         border-radius: 0;
     }
+    .home_inner
+    {
+        padding-top: 56px;
+        padding-bottom: 59px;
+    }
     .home_container
     {
         border-radius: 0px !important;
