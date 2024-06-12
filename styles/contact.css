@@ -42,7 +42,9 @@
 	--secondary_background: #f1f1f2;
 	--body_text: #4a4e70;
 	--body_text_2: #585f97;
+	--border: #d9dbf7;
 	--divider: #e8ecf6;
+	--border: #d9dbf7;
 	--primary_color: #5965d4;
 	--primary_color_light: #6c83e1;
 	--primary_grad_end: #4450bc;
@@ -495,8 +497,8 @@ section
 }
 .button_outline:hover
 {
-	background-color: var(--primary_color);
 	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+	background-color: var(--primary_dark);
 }
 .button_outline:hover span
 {
@@ -694,6 +696,59 @@ section
 {
 	color: var(--primary_color);
 }
+.main_nav ul li
+{
+	z-index: 1;
+}
+.dropdown
+{
+	z-index: 1;
+	margin-right: 30px !important;
+}
+.dropdown a svg
+{
+	width: 24px;
+	height: 24px;
+	-webkit-transform: translateY(1px);
+	-moz-transform: translateY(1px);
+	-ms-transform: translateY(1px);
+	-o-transform: translateY(1px);
+	transform: translateY(1px);
+}
+.dropdown .dropdown_panel
+{
+	display: block;
+	position: absolute;
+	left: -24px;
+	top: calc(100% - 12px);
+	width: 250px;
+	padding-top: 20px;
+	opacity: 0;
+	pointer-events: none;
+	z-index: -1;
+}
+.dropdown .dropdown_panel > div
+{
+	width: 100%;
+	height: 100%;
+	width: 250px;
+	padding-top: 16px;
+	padding-left: 22px;
+	padding-bottom: 24px;
+	padding-right: 24px;
+	border: solid 1px var(--divider);
+	background-color: var(--white);
+	border-radius: var(--border_rad_l);
+}
+.dropdown .dropdown_panel li:not(:last-child)
+{
+	margin-bottom: 16px;
+}
+.dropdown:hover .dropdown_panel
+{
+	opacity: 1;
+	pointer-events: all;
+}
 .header_right
 {
 	margin-left: auto;
@@ -716,7 +771,7 @@ section
 {
 	width: 100%;
 	height: 52px;
-	border: solid 1px var(--divider);
+	border: solid 1px var(--border);
 	border-radius: 26px;
 	padding-left: 24px;
 	color: var(--body_text);
@@ -896,10 +951,10 @@ section
 	height: 100%;
 	text-align: auto;
 }
-.header_controls_btn > a img
+.header_controls_btn > a svg
 {
-	width: 20px;
-	height: 20px;
+	width: 24px;
+	height: 24px;
 }
 .header_controls_btn:hover
 {
@@ -1430,12 +1485,16 @@ section
 .contact_input, .contact_textarea
 {
 	outline: none;
-	border: solid 1px var(--divider);
+	border: solid 1px var(--border);
 	border-radius: var(--border_rad_l);
 	height: 52px;
 	padding-left: 20px;
 	font-size: 18px;
 	color: var(--body_text);
+}
+.contact_input:focus, .contact_textarea:focus
+{
+	outline: solid 1px var(--primary_color_light);
 }
 .contact_input::-webkit-input-placeholder
 {
@@ -1546,7 +1605,16 @@ section
 
 .faq
 {
-	margin-top: 78px;
+	margin-top: 88px;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+.faq_inner
+{
+	border-radius: var(--border_rad_l);
+	background-color: var(--divider);
+	padding-top: 78px;
+	padding-bottom: 72px;
 }
 .contact_section_title
 {
@@ -1562,7 +1630,7 @@ section
 }
 .accordion_container
 {
-	background-color: #f1f1f2;
+	background-color: var(--white);
 	border-radius: var(--border_rad_l);
 	margin-bottom: 22px;
 }
@@ -1570,7 +1638,7 @@ section
 {
 	width: 100%;
 	border-radius: var(--border_rad_l);
-	background-color: #f1f1f2;
+	background-color: var(--white);
 	padding-left: 24px;
 	cursor: pointer;
 	color: var(--primary_text);
@@ -1627,6 +1695,14 @@ section
 	height: 32px;
 	fill: var(--primary_text);
 }
+.accordion.active .accordion_arrow
+{
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
 
 /*********************************
 11. CTA 3
@@ -1634,8 +1710,8 @@ section
 
 .cta_3
 {
-	padding-top: 82px;
-	padding-bottom: 113px;
+	padding-top: 78px;
+	padding-bottom: 88px;
 }
 .cta_3_container
 {

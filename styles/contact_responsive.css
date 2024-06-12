@@ -446,6 +446,11 @@
     {
         margin-top: 72px;
     }
+    .faq_inner
+    {
+        padding-top: 54px;
+        padding-bottom: 48px;
+    }
     .contact_section_title
     {
         font-size: 32px;
@@ -466,8 +471,8 @@
     }
     .cta_3
     {
-        padding-top: 66px;
-        padding-bottom: 97px;
+        padding-top: 54px;
+        padding-bottom: 64px;
     }
     .cta_3_container
     {
