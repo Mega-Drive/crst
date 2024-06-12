@@ -210,20 +210,20 @@ $(document).ready(function()
 	{
 		if($('.accordion').length)
 		{
-			var accs = $('.accordion');
+			let accs = $('.accordion');
 
 			accs.each(function()
 			{
-				var acc = $(this);
+				let acc = $(this);
 
 				if(acc.hasClass('active'))
 				{
-					var panel = $(acc.next());
-					var panelH = panel.prop('scrollHeight') + "px";
+					let panel = $(acc.next());
+					let panelH = panel.prop('scrollHeight') + "px";
 					
 					if(panel.css('max-height') == "0px")
 					{
-						panel.css('max-height', panel.prop('scrollHeight') + "px");
+						panel.css('max-height', panelH);
 					}
 					else
 					{
@@ -236,12 +236,12 @@ $(document).ready(function()
 					if(acc.hasClass('active'))
 					{
 						acc.removeClass('active');
-						var panel = $(acc.next());
-						var panelH = panel.prop('scrollHeight') + "px";
+						let panel = $(acc.next());
+						let panelH = panel.prop('scrollHeight') + "px";
 						
 						if(panel.css('max-height') == "0px")
 						{
-							panel.css('max-height', panel.prop('scrollHeight') + "px");
+							panel.css('max-height', panelH);
 						}
 						else
 						{
@@ -251,12 +251,12 @@ $(document).ready(function()
 					else
 					{
 						acc.addClass('active');
-						var panel = $(acc.next());
-						var panelH = panel.prop('scrollHeight') + "px";
+						let panel = $(acc.next());
+						let panelH = panel.prop('scrollHeight') + "px";
 						
 						if(panel.css('max-height') == "0px")
 						{
-							panel.css('max-height', panel.prop('scrollHeight') + "px");
+							panel.css('max-height', panelH);
 						}
 						else
 						{
