@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
 <title>Coursette - Blog Post</title>
 <meta charset="utf-8">
@@ -38,8 +38,8 @@
                             <span>Pages</span>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-346.85 253.85-573 291-610.15l189 189 189-189L706.15-573 480-346.85Z"/></svg>
                         </a>
-                        <ul class="dropdown_panel trans_200">
-                            <div>
+                        <div class="dropdown_panel_outer">
+                            <ul class="dropdown_panel trans_200">
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About</a></li>
                                 <li><a href="courses.html">Courses</a></li>
@@ -48,8 +48,8 @@
                                 <li><a href="blog_single.html">Blog Details</a></li>
                                 <li><a href="contact.html">Contact</a></li>
                                 <li><a href="login.html">Sign in</a></li>
-                            </div>
-                        </ul>
+                            </ul>
+                        </div> 
                     </li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -415,11 +415,9 @@
                                 </div>
                                 <textarea class="new_comment_textarea" name="new_comment_textarea" placeholder="Your comment" required></textarea>
                                 <div class="new_comment_button_container d-flex flex-row justify-content-end">
-                                    <button class="new_comment_button trans_200">
-                                        <div class="d-flex flex-row align-items-center justify-content-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M250-394h316v-52H250v52Zm0-132h460v-52H250v52Zm0-132h460v-52H250v52ZM116-134.46v-645.23q0-27.01 18.65-45.66Q153.3-844 180.31-844h599.38q27.01 0 45.66 18.65Q844-806.7 844-779.69v455.38q0 27.01-18.65 45.66Q806.7-260 779.69-260H241.54L116-134.46ZM220-312h559.69q4.62 0 8.46-3.85 3.85-3.84 3.85-8.46v-455.38q0-4.62-3.85-8.46-3.84-3.85-8.46-3.85H180.31q-4.62 0-8.46 3.85-3.85 3.84-3.85 8.46v520.08L220-312Zm-52 0v-480 480Z"/></svg>
-                                            <span>Post Comment</span>
-                                        </div>
+                                    <button class="new_comment_button d-flex flex-row align-items-center justify-content-center trans_200">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M250-394h316v-52H250v52Zm0-132h460v-52H250v52Zm0-132h460v-52H250v52ZM116-134.46v-645.23q0-27.01 18.65-45.66Q153.3-844 180.31-844h599.38q27.01 0 45.66 18.65Q844-806.7 844-779.69v455.38q0 27.01-18.65 45.66Q806.7-260 779.69-260H241.54L116-134.46ZM220-312h559.69q4.62 0 8.46-3.85 3.85-3.84 3.85-8.46v-455.38q0-4.62-3.85-8.46-3.84-3.85-8.46-3.85H180.31q-4.62 0-8.46 3.85-3.85 3.84-3.85 8.46v520.08L220-312Zm-52 0v-480 480Z"/></svg>
+                                        <span>Post Comment</span>
                                     </button>
                                 </div>
                             </form>
